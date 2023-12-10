@@ -1,0 +1,134 @@
+/* style.css */
+
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  background-color: #f0f0f0; 
+  color: #333; 
+}
+
+/* Navigation */
+header {
+  background-color: #333; 
+  padding: 1rem;
+}
+
+.navbar-container {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+
+.nav-item {
+  margin-left: 1rem;
+}
+
+.nav-button {
+  color: #f0f0f0; 
+  text-decoration: none;
+  padding: 0.25rem 0.5rem;
+  transition: 0.3s;
+}
+
+.nav-button:hover,
+.left-underline:hover::after,
+.nav-button:focus,
+.left-underline:focus::after {
+  content: '';
+  display: block;
+  border-bottom: 2px solid #f0f0f0;
+  margin-top: 0.25rem;
+}
+
+/* Active nav item */
+.nav-item.active .nav-button {
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.brand-logo {
+  font-weight: bold;
+}
+
+/* Main content */
+main {
+  padding: 2rem;
+}
+
+img {
+  display: block;
+  width: 50%;
+  height: auto;
+  margin-bottom: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1,
+h2 {
+  margin-bottom: 1rem;
+  color: #ff5e00; 
+  font-weight: bold;
+}
+
+p {
+  margin-bottom: 1.5rem;
+}
+
+/* Form styles */
+form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+label {
+  grid-column: 1 / -1;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #cccccc;
+}
+
+input[type="submit"] {
+    width: 30%; 
+    background-color: #ff5e00; 
+    color: #f0f0f0; 
+    padding: 0.5rem;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 0 auto; 
+    display: block; 
+  }
+
+input[type="submit"]:hover {
+  background-color: #e74c00; 
+}
+
+/* Contact information */
+ul {
+  list-style: none;
+}
+
+/* Footer */
+footer {
+  background-color: #333; 
+  color: #f0f0f0; 
+  text-align: center;
+  padding: 1rem;
+}

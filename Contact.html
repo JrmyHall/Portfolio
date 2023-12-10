@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!---Jeramy Hall-->
+<!---3/12/2023-->
+<html>
+<head>
+	<title>Contact Us - NexTier Detail</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<div class="navbar">
+            <ul class="navbar-container">
+              <li><a href="#" class="left-underline nav-button brand-logo">NexTier Detail</a></li>
+                <li class="nav-item"><a href="About Us.html" class="left-underline nav-button" data-scroll>About Us</a></li>
+                <li class="nav-item"><a href="Services.html" class="left-underline nav-button" data-scroll>Services</a></li>
+                <li class="nav-item active"><a href="Contact.html" class="left-underline nav-button" data-scroll>Contact</a></li>
+                <li class="nav-item"><a href="index.html" class="left-underline nav-button" data-scroll>Home</a></li>
+            </ul>
+          </div>
+	</header>
+
+    <img src="NSX.jpg">
+	
+	<main>
+		<section>
+			<h1>Contact Us</h1>
+			<p>Have a question or want to schedule an appointment? Contact us using the form below and we'll get back to you as soon as possible.</p>
+		</section>
+		
+		<section>
+			<h2>Contact Form</h2>
+			<form action="submit-form.php" method="post">
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name" required>
+				
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" required>
+				
+				<label for="phone">Phone:</label>
+				<input type="tel" id="phone" name="phone" required>
+				
+				<label for="message">Message:</label>
+				<textarea id="message" name="message" rows="5" required></textarea>
+				
+				<input type="submit" value="Send">
+			</form>
+		</section>
+		
+		<section>
+			<h2>Contact Information</h2>
+			<p>Alternatively, you can reach us at:</p>
+			<ul>
+				<li><strong>Address:</strong>1107 Louise Lane Ennis, TX 75119</li>
+				<li><strong>Phone:</strong> 972-859-9415</li>
+				<li><strong>Email:</strong> jrmyhall@gmail.com</li>
+			</ul>
+		</section>
+	</main>
+	
+	<footer>		
+		<p id="copyright">&copy; <span id="current-year"></span> NexTier Detail. All rights reserved.</p>		
+	</footer>
+	<script>
+		var currentYear = new Date().getFullYear();
+		document.getElementById('current-year').textContent = currentYear;
+	</script>	
+</body>
+</html>

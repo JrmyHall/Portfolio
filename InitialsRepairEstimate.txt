@@ -1,0 +1,84 @@
+public class InitialsRepairEstimate {
+    private String companyName;
+    private double materialsCost;
+    private double laborCost;
+    private double travelCost;
+    public InitialsRepairEstimate(String companyName) {
+        this.companyName = companyName;
+    }
+    public void compute(double laborTime, double travelTime, boolean isVeteran) {
+        // Check if travel distance is too far
+        if (travelTime > 2) {
+            System.out.println("The travel distance is too far. Job not accepted.");
+            return;
+        }
+        // Calculate labor cost based on labor time
+        laborCost = laborTime * 43.5;
+        // Calculate travel cost based on travel time
+        if (travelTime > 0.5) {
+            travelCost = (travelTime) * 9.25;
+        } else {
+            travelCost = 0;
+        }
+        // Calculate subtotal by adding up material, labor, and travel costs
+        double subtotal = materialsCost + laborCost + travelCost;
+        // Calculate discount based on veteran status
+        double discount;
+        if (isVeteran) {
+            discount = 0.125;
+        } else {
+            discount = 0;
+        }
+        // Calculate total cost including tax and discount
+        double total = subtotal * (1 - discount) * 1.0825;
+        // Print company name and total estimated cost, rounded to 2 decimal places
+        System.out.println("Company name: " + companyName);
+        System.out.println("Total estimated cost: $" + String.format("%.2f", total));
+        // If discount is applied, print veteran's discounted estimate, rounded to 2 decimal places
+        if (discount > 0) {
+            System.out.println("Veteran's discounted estimate: $" + String.format("%.2f", (total / (1 - discount) - total)));
+        }
+    }
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        // Prompt user for job name
+        System.out.print("Enter job name: ");
+        String jobName = scanner.nextLine();
+        // Prompt user for number of materials
+        System.out.print("Enter number of materials: ");
+        int numMaterials = scanner.nextInt();
+        scanner.nextLine();
+        // Create service object and print itemized list of materials
+        InitialsRepairEstimate service = new InitialsRepairEstimate("Henderson's Repair Service");
+        System.out.println("Itemized list of materials and their costs:");
+        //for loop materials
+        
+        for (int i = 0; i < numMaterials; i++) {
+            // Prompt user for material name
+            System.out.print("Enter material name: ");
+            String materialName = scanner.nextLine();
+            // Prompt user for quantity
+            System.out.print("Enter quantity: ");
+            int quantity = scanner.nextInt();
+            // Prompt user for price
+            System.out.print("Enter price: $");
+            double price = scanner.nextDouble();
+            scanner.nextLine();
+            // Calculate and accumulate material cost and print itemized list of materials
+            double cost = quantity * price;
+            service.materialsCost += cost;
+            System.out.println(materialName + " (Quantity: " + quantity + ", Price: $" + price + ", Cost: $" + cost + ")");
+        }
+        // Prompt user for estimated labor time
+        System.out.print("Enter estimated labor time (in hours): ");
+        double laborTime = scanner.nextDouble();
+        // Prompt user for travel time
+        System.out.print("Enter estimated travel time (in hours): ");
+        double travelTime = scanner.nextDouble();
+        // Prompt user for veteran status
+        System.out.print("Are you a veteran (Y/N)? ");
+        boolean isVeteran = scanner.next().equalsIgnoreCase("Y");
+        // Calculate and print costs
+        service.compute(laborTime, travelTime, isVeteran);
+    }
+}

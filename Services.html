@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!---Jeramy Hall-->
+<!---3/12/2023-->
+<html>
+<head>
+	<title>Services - NexTier Detail</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<div class="navbar">
+            <ul class="navbar-container">
+              <li><a href="#" class="left-underline nav-button brand-logo">NexTier Detail</a></li>
+                <li class="nav-item"><a href="About Us.html" class="left-underline nav-button" data-scroll>About Us</a></li>
+                <li class="nav-item active"><a href="Services.html" class="left-underline nav-button" data-scroll>Services</a></li>
+                <li class="nav-item"><a href="Contact.html" class="left-underline nav-button" data-scroll>Contact</a></li>
+                <li class="nav-item"><a href="index.html" class="left-underline nav-button" data-scroll>Home</a></li>
+            </ul>
+          </div>
+	</header>
+
+    <img src="R.jfif">
+	
+	<main>
+		<section>
+			<h1>Services</h1>
+			<p>We offer a wide range of detailing services to fit your needs.</p>
+		</section>
+		
+		<section>
+			<h2>Our Services</h2>
+			<table>
+				<tr>
+					<th>Service</th>
+					<th>Description</th>
+					<th>Price</th>
+				</tr>
+				<tr>
+					<td>Exterior Detailing</td>
+					<td>Wash, wax, polish, and tire cleaning.</td>
+					<td>$100</td>
+				</tr>
+				<tr>
+					<td>Interior Detailing</td>
+					<td>Complete vacuuming, dashboard and console cleaning, and upholstery cleaning.</td>
+					<td>$120</td>
+				</tr>
+				<tr>
+					<td>Full Detailing</td>
+					<td>Combines exterior and interior detailing services for a complete car makeover.</td>
+					<td>$200</td>
+				</tr>
+				<tr>
+					<td>Paint Correction</td>
+					<td>Restores your car's finish to like-new condition, removing scratches and imperfections.</td>
+					<td>$300</td>
+				</tr>
+				<tr>
+					<td>Ceramic Coating</td>
+					<td>Protects your car's paint job from scratches, weather, and UV rays for up to two years.</td>
+					<td>$500</td>
+				</tr>
+			</table>
+		</section>
+	</main>
+	
+	<footer>		
+		<p id="copyright">&copy; <span id="current-year"></span> NexTier Detail. All rights reserved.</p>		
+	</footer>
+	<script>
+		var currentYear = new Date().getFullYear();
+		document.getElementById('current-year').textContent = currentYear;
+	</script>	
+</body>
+</html>

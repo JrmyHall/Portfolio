@@ -1,0 +1,173 @@
+
+/*Jeramy Hall*/
+/*CSS Styles Project*/
+/*4/30/2023*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    background-color: #f0f0f0; 
+    color: #333; 
+  }
+  
+  /* Navigation */
+  header {
+    background-color: #333; 
+    padding: 1rem;
+  }
+  
+  .navbar-container {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+  }
+  
+  .nav-item {
+    margin-left: 1rem;
+  }
+  
+  .nav-button {
+    color: #f0f0f0; 
+    text-decoration: none;
+    padding: 0.25rem 0.5rem;
+    transition: 0.3s;
+  }
+  
+  .nav-button:hover,
+  .left-underline:hover::after,
+  .nav-button:focus,
+  .left-underline:focus::after {
+    content: '';
+    display: block;
+    border-bottom: 2px solid #f0f0f0;
+    margin-top: 0.25rem;
+  }
+  
+  /* Active nav item */
+  .nav-item.active .nav-button {
+    border-bottom: 2px solid #f0f0f0;
+  }
+  
+  .brand-logo {
+    font-weight: bold;
+  }
+  
+  /* Main content */
+  main {
+    padding: 2rem;
+  }
+  
+  img {
+    display: block;
+    width: 50%;
+    height: auto;
+    margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  h1,
+  h2 {
+    margin-bottom: 1rem;
+    color: #ff5e00; 
+    font-weight: bold;
+  }
+  
+  p {
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Table styles */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1.5rem;
+  }
+  
+  th,
+  td {
+    padding: 1rem;
+    border: 1px solid #cccccc; 
+    text-align: left;
+  }
+  
+  th {
+    background-color: #333;
+    color: #f0f0f0; 
+    font-weight: bold;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f0f0f0; 
+  }
+  
+  tr:nth-child(odd) {
+    background-color: #e6e6e6; 
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #333; 
+    color: #f0f0f0; 
+    text-align: center;
+    padding: 1rem;
+  }
+  /* Contact Form */
+section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #222;
+  }
+  
+  form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  
+  form label {
+    font-weight: bold;
+    color: #444;
+  }
+  
+  form input[type="text"],
+  form input[type="email"],
+  form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  form textarea {
+    resize: none;
+    height: 100px;
+  }
+  
+  input[type="submit"] {
+    width: 5%;
+    background-color: #ff5e00;
+    color: #f0f0f0;
+    padding: 0.5rem;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 0 auto;
+    display: block;
+    grid-column: span 2;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #e05700;
+    transition: 0.3s;
+  }
+  
