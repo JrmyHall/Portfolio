@@ -1,70 +1,88 @@
 <!DOCTYPE html>
-<!---Jeramy Hall-->
-<!---3/12/2023-->
-<html>
+<html lang="en">
 <head>
-	<title>NexTier Detail</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Main Page</title>
+  <script>
+    window.alert("Welcome to Electric Vehicle Land");
+  </script>
+  <link href="EV_1.css" rel="stylesheet" type="text/css">
+  <script src="EV_1.js"></script>
 </head>
 <body>
-	<header>
-        <div class="navbar">
-            <ul class="navbar-container">
-              <li><a href="#" class="left-underline nav-button brand-logo">NexTier Detail</a></li>
-                <li class="nav-item"><a href="About Us.html" class="left-underline nav-button" data-scroll>About Us</a></li>
-                <li class="nav-item"><a href="Services.html" class="left-underline nav-button" data-scroll>Services</a></li>
-                <li class="nav-item"><a href="Contact.html" class="left-underline nav-button" data-scroll>Contact</a></li>
-                <li class="nav-item active"><a href="index.html" class="left-underline nav-button" data-scroll>Home</a></li>
-            </ul>
-          </div>
-	</header>
+  <div class="navbar">
+    <ul class="navbar-container">
+      <li><a href="#" class="left-underline nav-button brand-logo">Electric Vehicles</a></li>
+      <li class="nav-item"><a href="History.html" class="left-underline nav-button" data-scroll>History</a></li>
+      <li class="nav-item"><a href="Cost.html" class="left-underline nav-button" data-scroll>Cost</a></li>
+      <li class="nav-item"><a href="form.html" class="left-underline nav-button" data-scroll>Form</a></li>
+      <li class="nav-item"><a href="CreateAccount.html" class="left-underline nav-button" data-scroll>Account</a></li>
+      <li class="nav-item active"><a href="index.html" class="left-underline nav-button" data-scroll>Home</a></li>
+    </ul>
+  </div>
+  
+  <div class="JH p1" id="section-1">
+    <hgroup>
+      <h2><img src="evcar.jpg" alt="Electric Car"></h2>
+    </hgroup>
+  </div>
 
-    <img src="NSX.jpg">
-	
-	<main>
-		<section>
-			<h1>Welcome to NexTier Detail</h1>
-			<p>Here you can find information about our services, our team, and how to contact us.</p>
-		</section>
-		
-		<section>
-			<h2>Our Services</h2>
-			<ul>
-				<li>Car detailing</li>
-				<li>Interior and exterior cleaning</li>
-				<li>Paint correction</li>
-				<li>Polishing and waxing</li>
-			</ul>
-		</section>
-		
-		<section>
-			<h2>About Us</h2>
-			<p>We are a team of experienced detailers who are passionate about cars and providing top-quality service to our customers. </p>
-		</section>
-		
-		<section>
-			<h2>Contact Us</h2>
-			<p>If you have any questions or would like to schedule an appointment, please fill out the form below:</p>
-			<form>
-				<label for="name">Name:</label>
-				<input type="text" id="name" name="name">
-				<label for="email">Email:</label>
-				<input type="email" id="email" name="email">
-				<label for="message">Message:</label>
-				<textarea id="message" name="message"></textarea>
-				<input type="submit" value="Submit">
-			</form>
-		</section>
-	</main>
-	
-	<footer>		
-		<p id="copyright">&copy; <span id="current-year"></span> NexTier Detail. All rights reserved.</p>		
-	</footer>
-	<script>
-		var currentYear = new Date().getFullYear();
-		document.getElementById('current-year').textContent = currentYear;
-	</script>	
+  <div class="row">
+    <div class="col-3">
+      <h1>Elon Who?</h1>
+      <p>A well-known figure among space exploration, Elon Musk helped popularize the electric car with Tesla. He even launched his Tesla roadster into Space! Somewhere in the vast universe is an electric vehicle that is floating across the Universe.</p>
+    </div>
+    <div class="col-3">
+      <h1>Where are the batteries?</h1>
+      <p>Most electric vehicles hide their batteries in the bottom of the vehicle. They created a battery pack that sits in the floor beneath your feet!</p>
+    </div>
+    <div class="col-3">
+      <h1>Where can I plug in?</h1>
+      <p>More charging stations are popping up across the United States! You can find them in Walmart Parking lots, large gas stations, and even some eating places. We have spotted them in a Collin Street Bakery Parking lot!</p>
+    </div>
+  </div>
+
+  <div class="JH p3">
+    <hgroup>
+      <h1>Random Facts!</h1>
+      <script src="randomFacts.js"></script>
+      <div id="box">
+        <div id="funfact1" class="funfact">
+          <p>80% of the energy in an electric vehicle battery is transferred directly to powering the car. Gasoline powered vehicles only use 15% of the energy to power the vehicle.</p>
+        </div>
+        
+        <div id="funfact2" class="funfact">
+          <p>The first electric vehicle was created in 1832. Thomas Edison worked on an electric car battery in 1899. New York City taxis were primarily electric in the early 1900s.</p>
+        </div>
+        
+        <div id="funfact3" class="funfact">
+          <p>Norway is aiming to phase out gasoline vehicles by 2025! France and the United Kingdom want to phase out gasoline vehicles by the year 2040.</p>
+        </div>
+        
+        <div id="funfact4" class="funfact">
+          <p>On average, the cost to power a vehicle by electricity is half the cost per mile to power it by gasoline. Switching to electric can also reduce your carbon footprint by 50%.</p>
+        </div>
+        <div id="buttonDiv">
+          <button id="buttonShuffle">Random fun fact</button>
+        </div>
+      </div>
+    </hgroup>
+  </div>
+
+  <footer>
+    <div class="row" id="section-3">
+      <div class="col-3">
+        <p><h1>Jeramy Hall Navarro College Fall 2022 Introduction to Scripting</h1></p>
+        <p><h2><a href="Web Security.html">Web Security Information</a></h2></p>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        <!-- ... (your footer content) ... -->
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
+

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+   <title>Join Our Webpage</title>
+   <link rel="stylesheet" href="createaccount.css" />
+   <script src="createevaccount.js" defer></script>
+</head>
+<body>
+    <div class="navbar">
+        <ul class="navbar-container">
+          <li><a href="#" class="left-underline nav-button brand-logo">Electric Vehicles</a></li>
+          <li class="nav-item"><a href="History.html" class="left-underline nav-button" data-scroll>History</a></li>
+          <li class="nav-item"><a href="Cost.html" class="left-underline nav-button" data-scroll>Cost</a></li>
+          <li class="nav-item"><a href="form.html" class="left-underline nav-button" data-scroll>Form</a></li>
+          <li class="nav-item active"><a href="CreateAccount.html" class="left-underline nav-button" data-scroll>Account</a></li>
+          <li class="nav-item"><a href="index.html" class="left-underline nav-button" data-scroll>Home</a></li>
+        </ul>
+    </div>
+
+   <header>
+      <h1>Join Our Page!</h1>
+   </header>
+
+   <section>
+      <h1>Create your Account</h1>
+      <form id="signup" name="signup" method="get" action="formsubmit.html">
+         <fieldset>
+            <legend>Enter your Account Information</legend>
+            <label for="user">Username</label>
+            <input type="text" id="user" name="user" required />
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="pwd">Password</label>
+            <input type="password" id="pwd" name="pwd" required pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"/>
+
+            <label for="confirm">Confirm Password</label>
+            <input type="password" id="pwd2" name="pwd2" required />
+
+            <input type="submit" id="submitButton" value="Save" />
+         </fieldset>
+      </form>
+   </section>
+</body>
+</html>
+

@@ -1,0 +1,287 @@
+div.navbar {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   background: #2b2929;
+   -webkit-box-shadow: 0px 2px 6px 0px rgba(50, 50, 50, 0.75);
+   -moz-box-shadow: 0px 2px 6px 0px rgba(50, 50, 50, 0.75);
+   box-shadow: 0px 2px 6px 0px rgba(50, 50, 50, 0.75);
+   z-index: 9999999;
+ }
+ 
+ div.navbar > ul.navbar-container {
+   list-style-type: none;
+   margin: 0;
+   padding-left: 1em;
+   padding-right: 1em;
+   overflow: hidden;
+ }
+ 
+ div.navbar > ul > li.nav-item {
+   float: right;
+   background-color: rgba(0, 0, 0, 0.1);
+   transition: all 0.5s ease;
+ }
+ 
+ div.navbar > ul > li.active {
+   background-color: rgba(0, 0, 0, 0.18);
+ }
+ 
+ div.navbar > ul > li:hover {
+   background-color: rgba(0, 0, 0, 0.2);
+ }
+ 
+ a.nav-button {
+   font-family: 'Roboto';
+   text-decoration: none;
+   line-height: 60px;
+   padding-left: 20px;
+   padding-right: 20px;
+   color: rgba(228, 241, 254, 1);
+   transition: all 0.5s ease;
+ }
+ 
+ a.nav-button:hover {
+   text-decoration: none;
+ }
+ 
+ li.active > a.nav-button {
+   cursor: default;
+ }
+ 
+ .brand-logo {
+   float: left;
+   cursor: default;
+ }
+ 
+ * {
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+ }
+ 
+ /* reset rules */
+ html,
+ body,
+ div,
+ span,
+ applet,
+ object,
+ iframe,
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6,
+ p,
+ blockquote,
+ pre,
+ a,
+ abbr,
+ acronym,
+ address,
+ big,
+ cite,
+ code,
+ del,
+ dfn,
+ em,
+ img,
+ ins,
+ kbd,
+ q,
+ s,
+ samp,
+ small,
+ strike,
+ strong,
+ sub,
+ sup,
+ tt,
+ var,
+ b,
+ u,
+ i,
+ center,
+ dl,
+ dt,
+ dd,
+ ol,
+ ul,
+ li,
+ fieldset,
+ form,
+ label,
+ legend,
+ table,
+ caption,
+ tbody,
+ tfoot,
+ thead,
+ tr,
+ th,
+ td,
+ article,
+ aside,
+ canvas,
+ details,
+ embed,
+ figure,
+ figcaption,
+ footer,
+ header,
+ hgroup,
+ menu,
+ nav,
+ output,
+ ruby,
+ section,
+ summary,
+ time,
+ mark,
+ audio,
+ video {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   font: inherit;
+   vertical-align: baseline;
+ }
+ 
+ /* HTML5 display-role reset for older browsers */
+ article,
+ aside,
+ details,
+ figcaption,
+ figure,
+ footer,
+ header,
+ hgroup,
+ menu,
+ nav,
+ section {
+   display: block;
+ }
+ 
+ body {
+   line-height: 1;
+   width: 960px;
+   margin: 0 auto;
+   font-family: Verdana, Geneva, sans-serif;
+ }
+ 
+ ol,
+ ul {
+   list-style: none;
+ }
+ 
+ /* page header */
+ header {
+   background: #050505;
+   width: 100%;
+   color: #FFFFFF;
+   font-size: 40px;
+   text-align: center;
+   line-height: 5;
+ }
+ 
+ /* main content */
+ article {
+   width: 960px;
+   height: 560px;
+   text-align: left;
+   background: #666561;
+   position: relative;
+ }
+ 
+ /*-------------------- Project Styles ------------------*/
+ 
+ section h1 {
+   font-size: 1.4em;
+   margin: 20px 0;
+ }
+ 
+ fieldset {
+   border: 1px solid rgb(192, 192, 192);
+   background-color: #cac9c0;
+   box-shadow: 3px 3px 20px gray;
+   padding: 30px;
+   display: block;
+   width: 600px;
+   margin: 0 auto;
+ }
+ 
+ fieldset legend {
+   color: black;
+   width: 300px;
+   text-align: left;
+   background: rgba(255, 255, 255, 0.3);
+   font-size: 1.05em;
+ }
+ 
+ label {
+   display: block;
+   width: 200px;
+   float: left;
+   clear: left;
+   margin-bottom: 15px;
+   text-align: right;
+   margin-right: 20px;
+   font-size: 1em;
+   font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+   color: black;
+ }
+ 
+ input {
+   display: block;
+   float: left;
+   font-size: 1.05em;
+   color: black;
+   margin-bottom: 15px;
+ }
+ 
+ input:invalid {
+   border-color: red;
+   box-shadow: 2px 2px 5px red;
+ }
+ 
+ input[type='submit'] {
+   clear: left;
+   display: block;
+   margin: 0 auto;
+   float: none;
+   font-size: 1.1em;
+   background-color: #3d3b37;
+   color: white;
+   padding: 3px;
+   width: 100px;
+ }
+ 
+ section > h1 {
+   font-weight: bold;
+   color: black;
+   margin-left: 30px;
+ }
+ 
+ table {
+   margin-left: 30px;
+   border-collapse: collapse;
+ }
+ 
+ table td {
+   border: 1px solid rgb(150, 150, 150);
+   padding: 5px;
+ }
+ 
+ table tr td:first-of-type {
+   background-color: #acaca9;
+ }
+ body {
+   background-image: url('C:/Users/jrmyh/OneDrive/Documents/Navarro Fall 2022/ICP/electricgrid.jpg');
+   background-size: cover;
+}
+
+/* Add any additional styling you need for your form and other elements */

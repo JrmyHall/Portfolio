@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>EV Cost</title>
+  <script src="EV_1.js"></script>
+  <script src="cost.js"></script>
+  <link href="EV_1.css" rel='stylesheet' type='text/css'>
+</head>
+<body>
+  <div class="navbar">
+    <ul class="navbar-container">
+      <li><a href="#" class="left-underline nav-button brand-logo">Electric Vehicles</a></li>
+      <li class="nav-item"><a href="History.html" class="left-underline nav-button" data-scroll>History</a></li>
+      <li class="nav-item active"><a href="Cost.html" class="left-underline nav-button" data-scroll>Cost</a></li>
+      <li class="nav-item"><a href="form.html" class="left-underline nav-button" data-scroll>Form</a></li>
+      <li class="nav-item"><a href="CreateAccount.html" class="left-underline nav-button" data-scroll>Account</a></li>
+      <li class="nav-item"><a href="index.html" class="left-underline nav-button" data-scroll>Home</a></li>
+    </ul>
+  </div>
+  
+  <div class="JH p1" id="section-1">
+    <hgroup>
+      <h2><img src="evcar.jpg" alt="Electric Car"></h2>
+      <h2></h2>
+    </hgroup>
+  </div>
+
+  <form>
+    kWh Cost: <input type="text" id="firstNumber" /><br>
+    Battery Size: <input type="text" id="secondNumber" /><br>
+    <input type="button" onClick="elec()" value="Enter for EV" />
+  </form>
+  <p>Total Charge Cost: <br>
+    <span id="Total Cost to Charge"></span>
+  </p>
+
+  <form>
+    Price per Gallon: <input type="text" id="thirdNumber" /><br>
+    Size of Tank: <input type="text" id="fourthNumber" /><br>
+    <input type="button" onClick="gas()" value="Enter for Gas" />
+  </form>
+  <p>Total Gas Cost: <br>
+    <span id="Total Cost for Gas"></span>
+  </p>
+
+  <form>
+    Charge Cost: <input type="text" id="fifthNumber" /><br>
+    Gas Cost: <input type="text" id="sixthNumber" /><br>
+    <input type="button" onClick="costDifference()" value="Enter for Difference" />
+  </form>
+  <p>Cost Difference: <br>
+    <span id="Difference"></span>
+  </p>
+</body>
+</html>
